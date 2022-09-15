@@ -25,11 +25,11 @@ public class SubActivity extends AppCompatActivity {
         // 자동차 >> km 208g
         // n보 == 0.00076km X n *
         pedometer_count.setText(String.valueOf(Var.count)+" 걸음");
-        carView.setText(" \uD83D\uDE97 : "+" 약 " + String.valueOf((double)Var.count*0.00076*208)+"g 탄소를 아꼈어요.");
-        motorcycleView.setText(" \uD83C\uDFCD️ : "+" 약 " + String.valueOf((double)Var.count*0.00076*145)+"g 탄소를 아꼈어요.");
-        e_scooter.setText(" \uD83D\uDEF4 : "+" 약 " + String.valueOf((double)Var.count*0.00076*126)+"g 탄소를 아꼈어요.");
-        subwayView.setText("\uD83D\uDE87 : "+" 약 " + String.valueOf((double)Var.count*0.00076*60)+"g 탄소를 아꼈어요.");
-        busView.setText("\uD83D\uDE8C : "+" 약 " + String.valueOf((double)Var.count*0.00076*58)+"g 탄소를 아꼈어요.");
+        carView.setText(" \uD83D\uDE97 : "+" 약 " + String.format("%.2f",(double)Var.count*0.00076*208)+"g 탄소를 아꼈어요.");
+        motorcycleView.setText(" \uD83C\uDFCD️ : "+" 약 " + String.format("%.2f",(double)Var.count*0.00076*145)+"g 탄소를 아꼈어요.");
+        e_scooter.setText(" \uD83D\uDEF4 : "+" 약 " + String.format("%.2f",(double)Var.count*0.00076*126)+"g 탄소를 아꼈어요.");
+        subwayView.setText("\uD83D\uDE87 : "+" 약 " + String.format("%.2f",(double)Var.count*0.00076*60)+"g 탄소를 아꼈어요.");
+        busView.setText("\uD83D\uDE8C : "+" 약 " + String.format("%.2f",(double)Var.count*0.00076*58)+"g 탄소를 아꼈어요.");
 
 
         Button ChangeButton = findViewById(R.id.changeButton2);
